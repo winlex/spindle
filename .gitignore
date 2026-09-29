@@ -1,0 +1,7 @@
+.opencode/
+
+bin/
+*.test
+coverage.out
+.env
+.DS_Store
