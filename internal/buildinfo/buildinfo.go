@@ -6,6 +6,7 @@ import (
 	"time"
 )
 
+// значение подменяется линкером через `-ldflags -X` при сборке релиза
 var version = "dev"
 
 type Info struct {

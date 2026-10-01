@@ -1,10 +1,11 @@
 package buildinfo_test
 
 import (
-	"github.com/winlex/spindle/internal/buildinfo"
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/winlex/spindle/internal/buildinfo"
 )
 
 func TestNew(t *testing.T) {

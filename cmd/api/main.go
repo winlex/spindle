@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/winlex/spindle/internal/buildinfo"
 	"os"
+
+	"github.com/winlex/spindle/internal/buildinfo"
 )
 
 func main() {

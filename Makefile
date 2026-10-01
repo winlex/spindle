@@ -1,6 +1,7 @@
 GO       ?= go
 BIN      := bin
-CMD      := ./cmd/api
+CMD      := ./cmd/api				 # для запуска: ровно один пакет
+ALL_CMDS := ./cmd/...        # для сборки: все команды
 COVERAGE := coverage.out
 
 .DEFAULT_GOAL := help
@@ -15,7 +16,7 @@ run: ## Запустить сервис
 
 build: ## Собрать бинарник в $(BIN)
 	@mkdir -p $(BIN)
-	$(GO) build -o $(BIN)/ $(CMD)
+	$(GO) build -o $(BIN)/ $(ALL_CMDS)
 
 test: ## Прогнать тесты
 	$(GO) test ./...
